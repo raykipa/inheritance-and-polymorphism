@@ -1,0 +1,28 @@
+#Create a class called Player
+"Add a move() method with a steps parameter such that:
+
+if position plus steps is less than MAX_POSITION, then add steps to position and assign the result back to position;
+otherwise, set position to MAX_POSITION"
+
+class Player:
+    MAX_POSITION = 10
+    
+    def __init__(self):
+        self.position = 0
+
+    # Add a move() method with steps parameter
+    def move(self, steps):
+        self.steps=steps
+
+        if self.position + self.steps < Player.MAX_POSITION:
+            self.position = self.steps + self.position
+        else:
+
+            self.position = Player.MAX_POSITION
+    
+
+       
+    # This method provides a rudimentary visualization in the console    
+    def draw(self):
+        drawing = "-" * self.position + "|" +"-"*(Player.MAX_POSITION - self.position)
+        print(drawing)
