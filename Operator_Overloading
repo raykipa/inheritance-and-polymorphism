@@ -11,3 +11,5 @@ class Employee:
         salary = self.salary)
         return emp
 
+emp1 = Employee("Amar Howard", 30000)
+print(emp1)
