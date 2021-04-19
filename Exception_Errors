@@ -14,4 +14,5 @@ print(invert_at_index(a, 1))
 
 # Potential ZeroDivisionError
 print(invert_at_index(a, 2))
-
+# Potential IndexError
+print(invert_at_index(a, 5))
