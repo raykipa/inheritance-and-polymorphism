@@ -30,6 +30,8 @@ cust.balance = 3000
 # Print the balance property
 print(cust.balance)
 
+
+#using operators to raise errors
 import pandas as pd
 from datetime import datetime
 
